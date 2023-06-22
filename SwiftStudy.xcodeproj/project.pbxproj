@@ -13,9 +13,12 @@
 		2BE66F912A44715E00F9A8D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE66F8F2A44715E00F9A8D7 /* Main.storyboard */; };
 		2BE66F932A44716100F9A8D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE66F922A44716100F9A8D7 /* Assets.xcassets */; };
 		2BE66F962A44716100F9A8D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE66F942A44716100F9A8D7 /* LaunchScreen.storyboard */; };
+		EFE6E2900EBFD971127BD96D /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C492C787F839376B9A7E5D82 /* Pods_SwiftStudy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CF9D648777F1A44660451E6 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		22F78A2EED0E6B5483280B9E /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		2BE66F862A44715E00F9A8D7 /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE66F892A44715E00F9A8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE66F8B2A44715E00F9A8D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		2BE66F922A44716100F9A8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE66F952A44716100F9A8D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE66F972A44716100F9A8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C492C787F839376B9A7E5D82 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE6E2900EBFD971127BD96D /* Pods_SwiftStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2BE66F882A44715E00F9A8D7 /* SwiftStudy */,
 				2BE66F872A44715E00F9A8D7 /* Products */,
+				344E00358D7176C185B49877 /* Pods */,
+				36A905E6008A9EAD5BED859B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SwiftStudy;
 			sourceTree = "<group>";
 		};
+		344E00358D7176C185B49877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CF9D648777F1A44660451E6 /* Pods-SwiftStudy.debug.xcconfig */,
+				22F78A2EED0E6B5483280B9E /* Pods-SwiftStudy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		36A905E6008A9EAD5BED859B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C492C787F839376B9A7E5D82 /* Pods_SwiftStudy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BE66F9A2A44716100F9A8D7 /* Build configuration list for PBXNativeTarget "SwiftStudy" */;
 			buildPhases = (
+				29B1F33807C1A0AFEF3AD50E /* [CP] Check Pods Manifest.lock */,
 				2BE66F822A44715E00F9A8D7 /* Sources */,
 				2BE66F832A44715E00F9A8D7 /* Frameworks */,
 				2BE66F842A44715E00F9A8D7 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29B1F33807C1A0AFEF3AD50E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BE66F822A44715E00F9A8D7 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		2BE66F9B2A44716100F9A8D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF9D648777F1A44660451E6 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		2BE66F9C2A44716100F9A8D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F78A2EED0E6B5483280B9E /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
