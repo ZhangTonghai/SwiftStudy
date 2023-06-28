@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 49c8c2cb27fc8a50670eef011c9f558b3090af0d
+PODS:
+  - Kingfisher (7.8.1)
+  - RxSwift (6.5.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+
+PODFILE CHECKSUM: d4491dd8de0e6f4e62e6c9271c9f9e788bebf338
 
 COCOAPODS: 1.12.1
